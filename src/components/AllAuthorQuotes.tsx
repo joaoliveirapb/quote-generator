@@ -18,7 +18,7 @@ export function AllAuthorQuotes({
 }: AllAuthorQuotesProps) {
   return (
     <div className="space-y-20">
-      <h1 className="pl-12 text-4xl font-bold text-zinc-700 dark:text-zinc-500">
+      <h1 className="pl-12 text-4xl font-bold text-zinc-700 dark:text-zinc-500 max-sm:pl-0">
         {author}
       </h1>
       <div className="space-y-16">

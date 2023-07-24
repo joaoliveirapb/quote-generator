@@ -7,10 +7,10 @@ interface HeaderProps {
 
 export function Header({ getRandomQuote }: HeaderProps) {
   return (
-    <header className="flex justify-end gap-10 px-28 py-4">
+    <header className="flex justify-end gap-10 px-28 py-4 max-sm:gap-4 max-sm:px-3">
       <button
         onClick={getRandomQuote}
-        className="flex items-center gap-2 px-2 text-lg font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-400"
+        className="flex items-center gap-2 px-2 text-lg font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-400 max-sm:px-0"
       >
         random
         <RefreshCw size={18} />

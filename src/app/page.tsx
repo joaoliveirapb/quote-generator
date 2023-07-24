@@ -62,7 +62,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <Header getRandomQuote={getRandomQuote} />
-      <section className="flex flex-1 flex-col items-center justify-center py-5">
+      <section className="flex flex-1 flex-col items-center justify-center p-5">
         {!isAllAuthorQuotes ? (
           randomQuote && !loading ? (
             <>
