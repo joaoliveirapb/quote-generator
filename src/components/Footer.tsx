@@ -7,7 +7,8 @@ export function Footer() {
         created by{' '}
         <Link
           href="https://github.com/joaoliveirapb"
-          className="font-bold underline transition-colors hover:text-zinc-600"
+          target="_blank"
+          className="font-bold underline transition-colors hover:text-zinc-600 dark:hover:text-zinc-400"
         >
           @joaoliveirapb
         </Link>
