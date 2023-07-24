@@ -1,3 +1,4 @@
+import { ThemesProvider } from '@/contexts/ThemesProvider'
 import type { Metadata } from 'next'
 import { Montserrat, Raleway } from 'next/font/google'
 import './globals.css'
@@ -26,8 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${raleway.variable} ${montserrat.variable} font-sans`}>
-        {children}
+      <body
+        className={`${raleway.variable} ${montserrat.variable} font-sans dark:bg-zinc-900`}
+      >
+        <ThemesProvider>{children}</ThemesProvider>
       </body>
     </html>
   )
