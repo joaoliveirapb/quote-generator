@@ -1,4 +1,5 @@
-import { Moon, RefreshCw } from 'lucide-react'
+import { RefreshCw } from 'lucide-react'
+import { ThemeButton } from './ThemeButton'
 
 export function Header() {
   return (
@@ -7,10 +8,7 @@ export function Header() {
         random
         <RefreshCw size={18} />
       </button>
-      <button className="flex items-center gap-2 px-2 text-lg font-medium text-zinc-600 transition-colors hover:text-zinc-900 dark:text-zinc-500 dark:hover:text-zinc-400">
-        dark
-        <Moon size={18} />
-      </button>
+      <ThemeButton />
     </header>
   )
 }
